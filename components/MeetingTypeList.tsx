@@ -7,13 +7,11 @@ import MeetingModal from "./MeetingModal";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useToast } from "@/hooks/use-toast";
-import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import ReactDatePicker from "react-datepicker";
 
 const MeetingTypeList = () => {
   const router = useRouter();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [meetingState, setMeetingState] = useState<
     "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
   >();
